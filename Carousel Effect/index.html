@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smooth Alternate Card Carousel</title>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .slider {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    animation: slide 12s ease-in-out infinite alternate; /* alternate = back & forth */
+  }
+
+  .card {
+    flex: 0 0 250px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-1080px); } /* Adjust based on number of cards and gap */
+  }
+</style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+  <div class="card">Card 5</div>
+</div>
+
+</body>
+</html>
