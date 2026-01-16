@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(255, 126, 180);
+    position: sticky;
+    top: 0;
+}
+header div.container{
+    background-color: green;
+    height: 500px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+display: flex;
+}
+header div.element1{
+    background-color: rgb(179, 255, 0);
+    height:400px;
+    width: 50%;
+    margin: 50px;
+   
+   
+
+}
+header div.element2{
+    background-color: rgb(255, 153, 0);
+    height:400px;
+    width: 50%;
+    margin: 50px;
+
+}
+.fixlogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: fixed;
+    top: 550px;
+    right: 50px;
+}
+.cardmain{
+    border: 2px solid black;
+    font-size: 110px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 70px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-wrap: anywhere;
+    
+}
+footer div.footer{
+    width: 100vw;
+    height: 30px;
+    background-color: rgb(128, 114, 114);
+
+}
