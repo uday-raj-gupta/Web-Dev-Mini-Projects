@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+--nav_color:  hsl(226, 100%, 50%);
+}
+nav{
+     background-color: var(--nav_color);
+    width: 100vw;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding: 10px;
+ text-align: right;
+ width: 100vw;
+}
+
+       
